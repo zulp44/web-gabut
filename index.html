@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>mbo gajelas</title>
+</head>
+<body>
+    <h1>welkam gess!</h1>
+    
+    <label for="nama">lebokno jenengmu:</label>
+    <input type="text" id="nama">
+    
+    <button onclick="tampilkanPesan()">Klik gae nampilno pesan</button>
+    
+    <p id="pesan"></p>
+    
+    <script>
+        function tampilkanPesan() {
+            var inputNama = document.getElementById("nama").value;
+            var pesan = "haloo, " + inputNama + "! tengkyuu sudah mau meluangkan waktunya sebentar:D.";
+            document.getElementById("pesan").innerHTML = pesan;
+        }
+    </script>
+</body>
+</html>
